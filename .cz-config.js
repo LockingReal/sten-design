@@ -26,5 +26,5 @@ module.exports = {
   },
   allowCustomScopes: true,
   allowBreakingChanges: ["特性", "修复"],
-  subjectLimit: 100,
+  subjectLimit: 100
 };
