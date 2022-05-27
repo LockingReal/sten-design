@@ -1,5 +1,6 @@
 {
   "name": "root",
+  "version": "0.0.2",
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^16.2.1",
@@ -21,7 +22,7 @@
     "prepare": "husky install",
     "lint:prettier": "prettier --write \"packages/**/*.{jsx,js}\"",
     "commit": "git cz",
-    "release": "standard-version"
+    "release": "standard-version -- --release-as major"
   },
   "config": {
     "commitizen": {
