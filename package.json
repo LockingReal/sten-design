@@ -15,12 +15,12 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-customizable"
+      "path": "node_modules/cz-customizable"
     }
   },
   "husky":{
     "hooks":{
-      "commit-msg":"npx commitlint -e -V"
+      "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
