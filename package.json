@@ -3,7 +3,9 @@
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "commitlint-config-cz": "^0.13.3",
     "cz-customizable": "^6.3.0",
     "husky": "^8.0.1",
@@ -11,6 +13,7 @@
     "yorkie": "^2.0.0"
   },
   "scripts": {
+    "prepare": "husky install",
     "commit": "git cz"
   },
   "config": {
@@ -20,7 +23,7 @@
   },
   "husky":{
     "hooks":{
-      "commit-msg":"commitlint -e -V"
+      "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
